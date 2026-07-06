@@ -399,9 +399,14 @@ This platform architecture directly supports:
 
 ---
 
-## 🎯 Interview Talking Points
+## Skills Demonstrated
 
-*"I built a complete SOAR platform from scratch using TheHive, Cortex, and Elasticsearch. I deployed it on Docker Compose, configured role-based access control with three user tiers, and created standardized case templates for phishing, malware, and brute-force scenarios. I wrote Python scripts to simulate SIEM alert intake, created an automated response playbook that executes containment actions in sub-seconds, and built MTTR reporting to track incident response performance. I encountered nine technical issues during deployment — from Elasticsearch version compatibility to API permission scoping — and resolved each one at the root cause level. The most valuable insight was realizing that SOAR isn't just tooling; it's about compressing the detection-to-response timeline from hours or days down to seconds. In production, this would directly translate to faster containment of actual breaches. The platform is production-representative in architecture, and the next steps are straightforward: connect a real SIEM instead of the simulated alert feed, integrate live threat intelligence APIs into Cortex, and scale for production alert volumes."*
+- **SOAR platform deployment** — Deployed and integrated TheHive 5.3, Cortex 3.1.7, and Elasticsearch 7.17.9 via Docker Compose, building a functioning security orchestration, automation, and response pipeline from the ground up.
+- **Case and alert management** — Configured TheHive case/alert workflows, including role-based profiles and permission scoping, to reflect realistic SOC analyst-to-lead handoff processes.
+- **Automation and enrichment** — Integrated Cortex analyzers with correctly scoped API keys to automate observable enrichment, reducing manual triage effort for incoming indicators.
+- **Data validation and observable handling** — Diagnosed and corrected invalid observable dataTypes, ensuring enrichment jobs and case data remained consistent and query-able across the platform.
+- **Environment troubleshooting** — Resolved 9 distinct live issues during deployment, including Docker Compose YAML errors and service configuration conflicts, demonstrating the ability to independently debug a multi-container security stack.
+- **Professional technical reporting** — Documented the full deployment, configuration decisions, and resolved issues in a structured, professional report suitable for team handoff or portfolio review.
 
 ---
 
